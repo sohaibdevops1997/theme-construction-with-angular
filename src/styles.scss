@@ -1,0 +1,210 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+@import '@angular/material/theming';
+
+
+$my-custom-primary: (
+  50: #E3F2FD,
+  100: #BBDEFB,
+  200: #90CAF9,
+  300: #64B5F6,
+  400: #42A5F5,
+  500: #2196F3,
+  600: #1E88E5,
+  700: #1976D2,
+  800: #1565C0,
+  900: #0D47A1,
+  A100: #82B1FF,
+  A200: #448AFF,
+  A400: #2979FF,
+  A700: #2962FF,
+  contrast: (
+    50: rgba(0, 0, 0, 0.87),
+    100: rgba(0, 0, 0, 0.87),
+    200: rgba(0, 0, 0, 0.87),
+    300: rgba(0, 0, 0, 0.87),
+    400: rgba(0, 0, 0, 0.87),
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: rgba(0, 0, 0, 0.87),
+    A200: white,
+    A400: white,
+    A700: white,
+  ),
+);
+
+$my-custom-secondary:(
+    0:#3B82F6
+);
+
+$my-custom-accent: (
+  50: #E8F5E9,
+  100: #C8E6C9,
+  200: #A5D6A7,
+  300: #81C784,
+  400: #66BB6A,
+  500: #10B981,  // Main accent color
+  600: #2E7D32,
+  700: #388E3C,
+  800: #43A047,
+  900: #1B5E20,
+  A100: #B9F6CA,
+  A200: #69F0AE,
+  A400: #00E676,
+  A700: #00C853,
+  contrast: (
+    50: rgba(0, 0, 0, 0.87),
+    100: rgba(0, 0, 0, 0.87),
+    200: rgba(0, 0, 0, 0.87),
+    300: rgba(0, 0, 0, 0.87),
+    400: rgba(0, 0, 0, 0.87),
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: rgba(0, 0, 0, 0.87),
+    A200: rgba(0, 0, 0, 0.87),
+    A400: rgba(0, 0, 0, 0.87),
+    A700: rgba(0, 0, 0, 0.87),
+  ),
+);
+
+$my-custom-background: (
+  50: #F9FAFB,
+  100: #F3F4F6,
+  200: #E5E7EB,
+  300: #D1D5DB,
+  400: #9CA3AF,
+  500: #6B7280,
+  600: #4B5563,
+  700: #374151,
+  800: #1F2937,  // Main background color
+  900: #111827,
+  A100: #F8FAFC,
+  A200: #F1F5F9,
+  A400: #E2E8F0,
+  A700: #CBD5E1,
+  contrast: (
+    50: rgba(0, 0, 0, 0.87),
+    100: rgba(0, 0, 0, 0.87),
+    200: rgba(0, 0, 0, 0.87),
+    300: rgba(0, 0, 0, 0.87),
+    400: rgba(0, 0, 0, 0.87),
+    500: rgba(255, 255, 255, 0.87),
+    600: rgba(255, 255, 255, 0.87),
+    700: rgba(255, 255, 255, 0.87),
+    800: rgba(255, 255, 255, 0.87),
+    900: rgba(255, 255, 255, 0.87),
+    A100: rgba(0, 0, 0, 0.87),
+    A200: rgba(0, 0, 0, 0.87),
+    A400: rgba(0, 0, 0, 0.87),
+    A700: rgba(0, 0, 0, 0.87),
+  ),
+);
+
+$my-custom-textcolor: (
+  50: #F9FAFB,
+  100: #F3F4F6,
+  200: #E5E7EB,
+  300: #D1D5DB,  // Main text color
+  400: #9CA3AF,
+  500: #6B7280,
+  600: #4B5563,
+  700: #374151,
+  800: #1F2937,
+  900: #111827,
+  A100: #FFFFFF,
+  A200: #E5E7EB,
+  A400: #D1D5DB,
+  A700: #111827,
+  contrast: (
+    50: rgba(0, 0, 0, 0.87),
+    100: rgba(0, 0, 0, 0.87),
+    200: rgba(0, 0, 0, 0.87),
+    300: rgba(0, 0, 0, 0.87),
+    400: rgba(0, 0, 0, 0.87),
+    500: rgba(255, 255, 255, 0.87),
+    600: rgba(255, 255, 255, 0.87),
+    700: rgba(255, 255, 255, 0.87),
+    800: rgba(255, 255, 255, 0.87),
+    900: rgba(255, 255, 255, 0.87),
+    A100: rgba(0, 0, 0, 0.87),
+    A200: rgba(0, 0, 0, 0.87),
+    A400: rgba(0, 0, 0, 0.87),
+    A700: rgba(0, 0, 0, 0.87),
+  ),
+);
+
+$my-custom-warn: (
+  50: #FFF3E0,
+  100: #FFE0B2,
+  200: #FFCC80,
+  300: #FFB74D,
+  400: #FFA726,
+  500: #FF9800, // Main warn color
+  600: #FB8C00,
+  700: #F57C00,
+  800: #EF6C00,
+  900: #E65100,
+  A100: #FFD180,
+  A200: #FFAB40,
+  A400: #FF9100,
+  A700: #FF6D00,
+  contrast: (
+    50: rgba(0, 0, 0, 0.87),
+    100: rgba(0, 0, 0, 0.87),
+    200: rgba(0, 0, 0, 0.87),
+    300: rgba(0, 0, 0, 0.87),
+    400: rgba(0, 0, 0, 0.87),
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: rgba(0, 0, 0, 0.87),
+    A200: rgba(0, 0, 0, 0.87),
+    A400: rgba(0, 0, 0, 0.87),
+    A700: rgba(0, 0, 0, 0.87),
+  ),
+);
+
+
+@include mat-core();
+
+// Define a custom theme if needed
+$my-primary: mat-palette($my-custom-primary);
+$my-accent: mat-palette($my-custom-accent);
+$my-warn: mat-palette($my-custom-warn);
+$my-background: mat-palette($my-custom-background);
+
+
+$my-theme: mat-light-theme((
+  color: (
+    primary: $my-primary,
+    accent: $my-accent,
+    warn: $my-warn,
+  ),
+  background: (
+    background: mat-color($my-background, 800), // Main background color
+    hover: mat-color($my-background, 700),      // Hover background color
+    card: mat-color($my-background, 700),       // Card background color
+    dialog: mat-color($my-background, 700),     // Dialog background color
+    disabled-button: mat-color($my-background, 600), // Disabled button background color
+    raised-button: mat-color($my-background, 500),  // Raised button background color
+    focused-button: mat-color($my-background, 400), // Focused button background color
+    selected-button: mat-color($my-background, 300),// Selected button background color
+    selected-disabled-button: mat-color($my-background, 200), // Selected disabled button background color
+    disabled-button-toggle: mat-color($my-background, 100), // Disabled button toggle background color
+    unselected-chip: mat-color($my-background, 50),        // Unselected chip background color
+    disabled-list-option: mat-color($my-background, 50),   // Disabled list option background color
+  )
+));
+@include angular-material-theme($my-theme);
